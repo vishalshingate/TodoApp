@@ -6,6 +6,13 @@ public class Todo{
 	private String title;
 	private int userId;
 
+	public Todo(int id, boolean completed, String title, int userId){
+		this.id = id;
+		this.completed = completed;
+		this.title = title;
+		this.userId = userId;
+	}
+
 	public void setId(int id){
 		this.id = id;
 	}
@@ -40,12 +47,12 @@ public class Todo{
 
 	@Override
  	public String toString(){
-		return 
-			"Todo{" + 
-			"id = '" + id + '\'' + 
-			",completed = '" + completed + '\'' + 
-			",title = '" + title + '\'' + 
-			",userId = '" + userId + '\'' + 
+		return
+			"Todo{" +
+			"id = '" + id + '\'' +
+			",completed = '" + completed + '\'' +
+			",title = '" + title + '\'' +
+			",userId = '" + userId + '\'' +
 			"}";
 		}
 }
